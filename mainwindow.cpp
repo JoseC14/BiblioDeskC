@@ -3,6 +3,7 @@
 #include "login.h"
 #include "home.h"
 #include "cadlivro.h"
+#include "conacervo.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,5 +32,17 @@ void MainWindow::on_btnInicio_clicked()
 void MainWindow::on_btnCadLivro_clicked()
 {
     AddWindow(new CadLivro);
+}
+
+
+void MainWindow::on_btnConAcervo_clicked()
+{
+    AddWindow(new ConAcervo);
+}
+
+
+void MainWindow::on_tabWindos_tabCloseRequested(int index)
+{
+    ui->tabWindos->removeTab(index);
 }
 

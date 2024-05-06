@@ -23,6 +23,10 @@ private slots:
     void on_btnInicio_clicked();
     void on_btnCadLivro_clicked();
 
+    void on_btnConAcervo_clicked();
+
+    void on_tabWindos_tabCloseRequested(int index);
+
 private:
     Ui::MainWindow *ui;
 };
