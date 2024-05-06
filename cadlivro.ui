@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CadLivro</class>
+ <widget class="QWidget" name="CadLivro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro de Livros</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+background-color:#1a5475
+}
+
+QLIstView
+{
+background-color:white;
+}
+
+QTextEdit
+{
+background-color:white;
+color:black;
+border: 1px solid black
+}
+
+QListWidget
+{
+background-color:white;
+color:black;
+}
+
+QComboBox
+{
+background-color:white;
+color:black;
+}
+
+QGroupBox
+{
+background-color:white;
+color:black;
+}
+
+QSpinBox
+{
+background-color:white;
+color:black;
+}
+
+QPushButton
+{
+background-color:#1a5475;
+color:white;
+}
+
+QLabel
+{
+	background-color:white;
+	color:black;
+}
+
+QInputDialog
+{
+	color:black;
+	background-color:white;
+}
+
+QMessageBox
+{
+	color:black;
+	background-color:white;
+}</string>
+  </property>
+  <widget class="QTextEdit" name="teLivro">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>170</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Livro</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbEditora">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>241</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>Editora A</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Editora B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Editora C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Editora D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Editora E</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="cbAutor">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>280</y>
+     <width>241</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>Autor A</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Autor B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Autor C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Autor D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Autor E</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="sbQQuant">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>350</y>
+     <width>241</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>170</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::MultiSelection</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>Fantasia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Terror</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Infato-Juvenil</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Horror</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Trhiller</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Suspense</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Romance</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Policial</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>410</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cadastrar</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>671</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lQuant">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>330</y>
+     <width>81</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:none;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Quantidade</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lQuant_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>150</y>
+     <width>81</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:none;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Genêros</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>260</y>
+     <width>201</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Precisa cadastrar uma editora? clique</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>310</y>
+     <width>211</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Precisa cadastrar um(a) autor(a)?  clique</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCadEditora">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>260</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#1a5475</string>
+   </property>
+   <property name="text">
+    <string>Aqui</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCadAutor">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>310</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#1a5475</string>
+   </property>
+   <property name="text">
+    <string>Aqui</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>listView</zorder>
+  <zorder>teLivro</zorder>
+  <zorder>cbEditora</zorder>
+  <zorder>cbAutor</zorder>
+  <zorder>sbQQuant</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>lQuant</zorder>
+  <zorder>lQuant_2</zorder>
+  <zorder>label</zorder>
+  <zorder>label_3</zorder>
+  <zorder>btnCadEditora</zorder>
+  <zorder>btnCadAutor</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -16,9 +16,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void AddWindow(QWidget *window);
+
 
 private slots:
-    void on_pushButton_7_clicked();
+    void on_btnInicio_clicked();
+    void on_btnCadLivro_clicked();
 
 private:
     Ui::MainWindow *ui;

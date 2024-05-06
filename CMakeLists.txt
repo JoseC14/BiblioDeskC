@@ -24,6 +24,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         login.h login.cpp login.ui
+        home.h home.cpp home.ui
+        cadlivro.h cadlivro.cpp cadlivro.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET BiblioDesk APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
