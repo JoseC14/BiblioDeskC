@@ -4,6 +4,9 @@
 #include "home.h"
 #include "cadlivro.h"
 #include "conacervo.h"
+#include "emplivro.h"
+#include "devlivro.h"
+#include "historico.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -44,5 +47,23 @@ void MainWindow::on_btnConAcervo_clicked()
 void MainWindow::on_tabWindos_tabCloseRequested(int index)
 {
     ui->tabWindos->removeTab(index);
+}
+
+
+void MainWindow::on_btnEmprestar_clicked()
+{
+    AddWindow(new EmpLivro);
+}
+
+
+void MainWindow::on_btnDevolver_clicked()
+{
+    AddWindow(new DevLivro);
+}
+
+
+void MainWindow::on_btnHistorico_clicked()
+{
+    AddWindow(new Historico);
 }
 

@@ -163,10 +163,13 @@ color:black
     </layout>
    </widget>
    <widget class="QTabWidget" name="tabWindos">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>60</y>
+      <y>70</y>
       <width>1361</width>
       <height>691</height>
      </rect>
@@ -180,11 +183,17 @@ color:black
     <property name="currentIndex">
      <number>1</number>
     </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
     <property name="tabsClosable">
      <bool>true</bool>
     </property>
     <property name="movable">
      <bool>true</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">

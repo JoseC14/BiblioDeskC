@@ -27,6 +27,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         home.h home.cpp home.ui
         cadlivro.h cadlivro.cpp cadlivro.ui
         conacervo.h conacervo.cpp conacervo.ui
+        emplivro.h emplivro.cpp emplivro.ui
+        devlivro.h devlivro.cpp devlivro.ui
+        historico.h historico.cpp historico.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET BiblioDesk APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

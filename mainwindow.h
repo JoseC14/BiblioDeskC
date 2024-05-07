@@ -27,6 +27,12 @@ private slots:
 
     void on_tabWindos_tabCloseRequested(int index);
 
+    void on_btnEmprestar_clicked();
+
+    void on_btnDevolver_clicked();
+
+    void on_btnHistorico_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
