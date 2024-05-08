@@ -1,5 +1,6 @@
 #include "cadlivro.h"
 #include "ui_cadlivro.h"
+#include "db/autor_db.h"
 #include <QInputDialog>
 #include <QMessageBox>
 
@@ -28,6 +29,8 @@ void CadLivro::CadItem(QString item, QString type)
     QMessageBox box;
     if(item != "")
     {
+        Autor_db autor;
+        autor.InsertAutor(item);
         box.about(this,item,sucess);
     }
 }
